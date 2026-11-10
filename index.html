@@ -11,7 +11,11 @@
   <body>
     <header class="site-header">
       <a class="brand" href="#inicio" aria-label="Inicio del portafolio">GL</a>
-      <nav class="site-nav" aria-label="Navegación principal">
+      <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="menu-toggle__label">Menú</span>
+        <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span></span>
+      </button>
+      <nav id="primary-navigation" class="site-nav" aria-label="Navegación principal">
         <a class="site-nav__link site-nav__link--active" href="#inicio">Inicio</a>
         <a class="site-nav__link" href="#sobre-mi">Sobre mí</a>
         <a class="site-nav__link" href="#proyectos">Proyectos</a>
@@ -174,9 +178,45 @@
           </article>
         </div>
       </section>
+
+      <section id="contacto" class="contact-section" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p class="eyebrow">Contacto</p>
+          <h2 id="contact-title">¿Tienes una idea o quieres conocer más sobre mi trabajo?</h2>
+          <p class="section-intro">Puedes dejarme un mensaje. Por ahora el formulario valida la información en el navegador; todavía no está conectado a un servicio de envío.</p>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-field">
+            <label for="name">Nombre</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+            <small class="field-error" data-error-for="name"></small>
+          </div>
+          <div class="form-field">
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+            <small class="field-error" data-error-for="email"></small>
+          </div>
+          <div class="form-field form-field--wide">
+            <label for="subject">Asunto</label>
+            <input id="subject" name="subject" type="text" required />
+            <small class="field-error" data-error-for="subject"></small>
+          </div>
+          <div class="form-field form-field--wide">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            <small class="field-error" data-error-for="message"></small>
+          </div>
+          <div class="form-actions form-field--wide">
+            <button class="button button--primary" type="submit">Validar mensaje <span aria-hidden="true">↗</span></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </section>
     </main>
 
-    <footer class="site-footer"><p>&copy; <span id="current-year"></span> Geovanny Lacouture.</p></footer>
+    <footer class="site-footer"><p>&copy; <span id="current-year"></span> Geovanny Lacouture.</p><p>Formulario pendiente de conexión con un servicio de correo.</p></footer>
+    <button class="back-to-top" type="button" aria-label="Volver al inicio">↑</button>
     <script src="js/main.js" defer></script>
   </body>
 </html>

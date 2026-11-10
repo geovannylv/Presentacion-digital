@@ -31,11 +31,13 @@ no se carga directamente en el navegador.
 Abre `index.html` en un navegador o utiliza la extensión Live Server de VS
 Code si deseas recarga automática durante el desarrollo.
 
-Si tienes TypeScript instalado, puedes comprobar el archivo tipado con:
+Si tienes TypeScript instalado, puedes compilar el archivo tipado con:
 
 ```bash
-tsc --noEmit
+tsc
 ```
 
-La opción `noEmit` mantiene esta primera etapa sencilla: el navegador ejecuta
-`js/main.js` y `ts/main.ts` sirve como base tipada para futuras ampliaciones.
+La configuración de [`tsconfig.json`](./tsconfig.json) compila `ts/main.ts` en
+`js/main.js`, que es el archivo que ejecuta el navegador. El formulario de
+contacto valida los datos localmente, pero no simula envíos: queda pendiente de
+conectar un servicio de correo o un backend real.

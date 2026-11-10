@@ -2,7 +2,9 @@
   "compilerOptions": {
     "target": "ES2020",
     "strict": true,
-    "noEmit": true,
+    "rootDir": "ts",
+    "outDir": "js",
+    "noEmit": false,
     "lib": ["ES2020", "DOM"]
   },
   "include": ["ts/**/*.ts"]

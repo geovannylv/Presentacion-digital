@@ -3,23 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portafolio digital profesional de Geovanny Andrés Lacouture Velásquez." />
+    <meta name="description" content="Portafolio digital profesional de Geovanny Lacouture, estudiante de Ingeniería en Ciencias de la Computación." />
     <title>Geovanny Lacouture | Portafolio digital</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Inicio del portafolio">GL</a>
-      <nav aria-label="Navegación principal"><a href="#inicio">Inicio</a></nav>
+      <a class="brand" href="#inicio" aria-label="Inicio del portafolio">GL</a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a class="site-nav__link site-nav__link--active" href="#inicio">Inicio</a>
+        <a class="site-nav__link" href="#sobre-mi">Sobre mí</a>
+        <a class="site-nav__link" href="#proyectos">Proyectos</a>
+        <a class="site-nav__link" href="#contacto">Contacto</a>
+      </nav>
     </header>
 
     <main id="inicio" class="page-shell">
       <section class="intro" aria-labelledby="intro-title">
-        <p class="eyebrow">Portafolio digital</p>
-        <h1 id="intro-title">Geovanny Andrés Lacouture Velásquez</h1>
-        <p class="intro__summary">Estudiante de Ingeniería en Ciencias de la Computación en ESPOL, interesado en crear soluciones mediante software, datos y tecnología.</p>
-        <p class="intro__note">Esta base se ampliará progresivamente con el perfil, las tecnologías y los proyectos destacados.</p>
+        <div class="intro__content">
+          <p class="eyebrow">Ingeniería · Software · Datos</p>
+          <h1 id="intro-title">Geovanny <span>Lacouture</span></h1>
+          <p class="intro__summary">Estudiante de Ingeniería en Ciencias de la Computación, interesado en desarrollar soluciones tecnológicas mediante software, automatización e inteligencia artificial.</p>
+          <div class="intro__actions" aria-label="Acciones principales">
+            <a class="button button--primary" href="#proyectos">Explorar proyectos <span aria-hidden="true">↗</span></a>
+            <a class="button button--secondary" href="#contacto">Contactarme</a>
+          </div>
+        </div>
+
+        <div class="code-card" aria-label="Detalle visual de código">
+          <div class="code-card__topbar"><span></span><span></span><span></span><small>portfolio.ts</small></div>
+          <pre><code><span class="code-keyword">const</span> developer = {
+  name: <span class="code-string">"Geovanny"</span>,
+  focus: [<span class="code-string">"software"</span>, <span class="code-string">"AI"</span>],
+  status: <span class="code-string">"always learning"</span>
+};</code></pre>
+          <span class="code-card__line" aria-hidden="true"></span>
+        </div>
+
+        <a class="scroll-cue" href="#sobre-mi">
+          <span class="scroll-cue__line" aria-hidden="true"></span>
+          <span>Desplázate para conocerme</span>
+        </a>
       </section>
     </main>
 

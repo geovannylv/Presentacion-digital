@@ -3,7 +3,7 @@
 Portafolio digital profesional de Geovanny Andrés Lacouture Velásquez,
 estudiante de Ingeniería en Ciencias de la Computación en ESPOL.
 
-## Estructura inicial
+## Estructura del proyecto
 
 ```text
 .
@@ -22,9 +22,9 @@ estudiante de Ingeniería en Ciencias de la Computación en ESPOL.
 └── tsconfig.json
 ```
 
-La página utiliza HTML5, CSS3 y JavaScript sin frameworks ni dependencias
-externas. TypeScript se mantiene como una versión tipada de la lógica inicial;
-no se carga directamente en el navegador.
+La página utiliza HTML5, CSS3, JavaScript y TypeScript sin frameworks ni
+dependencias externas. TypeScript es la fuente tipada de la lógica; el
+navegador carga el JavaScript compilado.
 
 ## Desarrollo local
 
@@ -41,3 +41,15 @@ La configuración de [`tsconfig.json`](./tsconfig.json) compila `ts/main.ts` en
 `js/main.js`, que es el archivo que ejecuta el navegador. El formulario de
 contacto valida los datos localmente, pero no simula envíos: queda pendiente de
 conectar un servicio de correo o un backend real.
+
+## Publicación en GitHub Pages
+
+1. Publica el contenido de este repositorio en GitHub y asegúrate de que sea
+   público.
+2. En el repositorio, abre **Settings → Pages**.
+3. En **Build and deployment**, selecciona **Deploy from a branch**.
+4. Elige la rama principal y la carpeta `/ (root)`.
+5. Guarda la configuración y espera a que GitHub Pages genere la URL.
+
+`index.html` está en la raíz y utiliza rutas relativas, por lo que el sitio no
+requiere un servidor backend para funcionar como página estática.

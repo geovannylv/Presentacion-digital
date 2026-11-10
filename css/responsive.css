@@ -26,7 +26,8 @@
   .contact-section { grid-template-columns: 1fr; gap: 2.5rem; padding-block: 5rem 2rem; }
   .contact-form { grid-template-columns: 1fr; }
   .form-field--wide { grid-column: auto; }
-  .site-footer { display: grid; gap: 0.5rem; }
+  .site-footer { grid-template-columns: 1fr; gap: 1.25rem; }
+  .footer__meta { justify-items: start; text-align: left; }
   .back-to-top { right: 1rem; bottom: 1rem; }
 }
 

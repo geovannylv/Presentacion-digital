@@ -1,0 +1,5 @@
+@media (max-width: 40rem) {
+  .site-header, .page-shell, .site-footer { width: min(100% - 2rem, var(--content-width)); }
+  .page-shell { min-height: calc(100vh - 8rem); padding-block: 2rem; }
+  .intro { padding: 2rem 1.5rem; }
+}

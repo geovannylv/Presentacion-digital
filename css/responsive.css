@@ -13,6 +13,9 @@
   .skills-block { margin-top: 6rem; }
   .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .skill-card--wide { grid-column: span 2; }
+  .projects-section { padding-block: 5rem 2rem; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .project-card--wide { grid-column: auto; min-height: 23rem; }
 }
 
 @media (max-width: 28rem) {

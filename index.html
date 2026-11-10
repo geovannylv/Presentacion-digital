@@ -106,6 +106,74 @@
           </div>
         </div>
       </section>
+
+      <section id="proyectos" class="projects-section" aria-labelledby="projects-title">
+        <div class="section-heading projects-heading">
+          <p class="eyebrow">Selección de trabajos</p>
+          <h2 id="projects-title">Proyectos que conectan investigación y práctica.</h2>
+          <p class="section-intro">Una selección de proyectos académicos y prácticos en los que he aplicado programación, análisis, accesibilidad y automatización.</p>
+        </div>
+
+        <div class="project-filters" aria-label="Filtrar proyectos">
+          <button class="filter-button filter-button--active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="filter-button" type="button" data-filter="web" aria-pressed="false">Desarrollo web</button>
+          <button class="filter-button" type="button" data-filter="ia" aria-pressed="false">Inteligencia artificial</button>
+          <button class="filter-button" type="button" data-filter="automatizacion" aria-pressed="false">Automatización</button>
+          <button class="filter-button" type="button" data-filter="investigacion" aria-pressed="false">Investigación</button>
+        </div>
+
+        <div class="projects-grid" aria-live="polite">
+          <article class="project-card reveal" data-category="ia investigacion">
+            <div class="project-card__meta"><span>01</span><span>Investigación · IA</span></div>
+            <h3>Evaluación comparativa y optimización del rendimiento computacional de un servidor para la ejecución de modelos de lenguaje</h3>
+            <p>Investigación académica orientada a evaluar el rendimiento de un servidor al ejecutar modelos de lenguaje de código abierto, considerando modelos, contexto, recursos y configuración de hardware.</p>
+            <div class="project-card__footer">
+              <ul class="tag-list" aria-label="Tecnologías del proyecto de modelos de lenguaje"><li>Python</li><li>Linux</li><li>CUDA</li><li>OpenCL</li><li>LLM</li></ul>
+              <span class="project-status">Investigación académica</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="investigacion">
+            <div class="project-card__meta"><span>02</span><span>Investigación · UX</span></div>
+            <h3>Evaluación de accesibilidad web mediante WCAG</h3>
+            <p>Investigación universitaria sobre el cumplimiento de criterios de accesibilidad en sitios de bibliotecas universitarias, utilizando pautas WCAG y herramientas como WAVE y TAW.</p>
+            <div class="project-card__footer">
+              <ul class="tag-list" aria-label="Tecnologías del proyecto de accesibilidad"><li>WCAG</li><li>WAVE</li><li>TAW</li><li>UX</li></ul>
+              <span class="project-status">Proyecto académico</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="web">
+            <div class="project-card__meta"><span>03</span><span>Desarrollo web</span></div>
+            <h3>Desfile de Guayaquil · Carros Alegóricos</h3>
+            <p>Página web dedicada a presentar información de un desfile de carros alegóricos por las celebraciones de Guayaquil, a partir de una plantilla HTML personalizada.</p>
+            <div class="project-card__footer">
+              <ul class="tag-list" aria-label="Tecnologías del proyecto del desfile"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <a class="project-link" href="https://github.com/geovannylv/landingPage-desfileGYE.git" target="_blank" rel="noreferrer">Ver repositorio <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="automatizacion">
+            <div class="project-card__meta"><span>04</span><span>Automatización</span></div>
+            <h3>Automatización de procesos administrativos con Excel VBA</h3>
+            <p>Desarrollo de macros y formularios en Excel VBA para facilitar tareas administrativas, organizar información y optimizar procesos relacionados con horas y documentación.</p>
+            <div class="project-card__footer">
+              <ul class="tag-list" aria-label="Tecnologías del proyecto de automatización"><li>Excel</li><li>VBA</li><li>Macros</li><li>UserForms</li></ul>
+              <span class="project-status">Proyecto práctico</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card--wide reveal" data-category="investigacion">
+            <div class="project-card__meta"><span>05</span><span>Innovación · Accesibilidad</span></div>
+            <h3>Plataforma de rutas accesibles en Guayaquil</h3>
+            <p>Propuesta académica de una plataforma orientada a facilitar la identificación de rutas accesibles para personas con movilidad reducida, combinando información geográfica, navegación y criterios de accesibilidad urbana.</p>
+            <div class="project-card__footer">
+              <ul class="tag-list" aria-label="Conceptos de la plataforma de rutas accesibles"><li>Accesibilidad urbana</li><li>Datos geográficos</li><li>Navegación</li></ul>
+              <span class="project-status">Propuesta académica</span>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer"><p>&copy; <span id="current-year"></span> Geovanny Lacouture.</p></footer>
